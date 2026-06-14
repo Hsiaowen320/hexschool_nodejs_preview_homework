@@ -1,0 +1,139 @@
+{
+  "info": {
+    "_postman_id": "13000df6-ab27-4b22-a6ed-1ff09f65c4f1",
+    "name": "New Collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "取得 TodoList 資料",
+      "id": "02a741e0-e38b-47a3-916e-381baefe72b1",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3005/",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3005",
+          "path": [
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "新增 Todo 資料",
+      "id": "c5a08ba9-590a-4891-98cc-3e6e8add2087",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"title\": \"\"\r\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3005/",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3005",
+          "path": [
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "更新特定 Todo 資料",
+      "id": "e8fded6b-61e3-419a-acdb-64102fdf19ef",
+      "request": {
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"title\": \"\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3005/todos/:id",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3005",
+          "path": [
+            "todos",
+            ":id"
+          ],
+          "variable": [
+            {
+              "key": "id",
+              "value": "",
+              "uuid": "37c05388-7374-4a5b-a650-606bdfb703c6"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "刪除特定 Todo 資料",
+      "id": "c312f189-95f4-4e1c-b642-b304dc6485e3",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3005/todos/:id",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3005",
+          "path": [
+            "todos",
+            ":id"
+          ],
+          "variable": [
+            {
+              "key": "id",
+              "value": "",
+              "uuid": "37c05388-7374-4a5b-a650-606bdfb703c6"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "刪除 TodoList 資料",
+      "id": "f09b4d4e-0b2c-47c6-bbd0-2f44c7cb3ed2",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3005/todos/",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3005",
+          "path": [
+            "todos",
+            ""
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
